@@ -3,53 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Social Media Dashboard</title>
+    <title>ChatGPT Integration</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Social Media Dashboard</h1>
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Connect Accounts</a></li>
-                    <li><a href="#">Logout</a></li>
-                </ul>
-            </nav>
+    <div class="chat-container">
+        <div id="chatbox"></div>
+        <div class="input-container">
+            <input type="text" id="user-input" placeholder="Type your message...">
+            <button id="send-btn">Send</button>
         </div>
-    </header>
-
-    <main>
-        <section class="dashboard">
-            <h2>Your Social Feeds</h2>
-            <div class="feed-grid">
-                <div class="feed" id="facebook-feed">
-                    <h3>Facebook</h3>
-                    <div class="feed-content">
-                        <!-- Facebook mock posts -->
-                    </div>
-                </div>
-                <div class="feed" id="twitter-feed">
-                    <h3>Twitter</h3>
-                    <div class="feed-content">
-                        <!-- Twitter mock posts -->
-                    </div>
-                </div>
-                <div class="feed" id="instagram-feed">
-                    <h3>Instagram</h3>
-                    <div class="feed-content">
-                        <!-- Instagram mock posts -->
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>© 2024 Social Media Dashboard. All Rights Reserved.</p>
-    </footer>
-
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
