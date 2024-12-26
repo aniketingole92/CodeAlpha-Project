@@ -3,21 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Expense Tracker</title>
-    <link rel="stylesheet" href="index.css">
+    <title>Social Media Dashboard</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Expense Tracker</h1>
-        <form id="expense-form">
-            <input type="text" id="expense-name" placeholder="Expense Name" required>
-            <input type="number" id="expense-amount" placeholder="Amount" required>
-            <button type="submit">Add Expense</button>
-        </form>
-        <ul id="expense-list"></ul>
-        <p id="total-expense">Total: $0</p>
-    </div>
+    <header>
+        <div class="container">
+            <h1>Social Media Dashboard</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Connect Accounts</a></li>
+                    <li><a href="#">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="dashboard">
+            <h2>Your Social Feeds</h2>
+            <div class="feed-grid">
+                <div class="feed" id="facebook-feed">
+                    <h3>Facebook</h3>
+                    <div class="feed-content">
+                        <!-- Facebook mock posts -->
+                    </div>
+                </div>
+                <div class="feed" id="twitter-feed">
+                    <h3>Twitter</h3>
+                    <div class="feed-content">
+                        <!-- Twitter mock posts -->
+                    </div>
+                </div>
+                <div class="feed" id="instagram-feed">
+                    <h3>Instagram</h3>
+                    <div class="feed-content">
+                        <!-- Instagram mock posts -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Social Media Dashboard. All Rights Reserved.</p>
+    </footer>
+
     <script src="script.js"></script>
 </body>
-<script src="index.js"> </script>
 </html>
